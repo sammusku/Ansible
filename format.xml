@@ -1,0 +1,12 @@
+<!-- employees and employee are the objects here  -->
+<employees>
+   <employee>
+       <name>sam</name>
+       <role>devops engineer</role>
+   </employee>
+   <employee>
+        <name>jyo</name>
+        <role>developer</role>
+   </employee>
+
+</employees>

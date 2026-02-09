@@ -1,0 +1,23 @@
+employees_information:
+  - name: sam
+    dob: 1998
+    address:
+      - type: perm
+       flatno: 111
+       city: hyd
+      - type: current
+       flatno: 125
+       city: luxumberg
+
+
+  - name: jyo
+    dob: 1998
+    address:
+      - type: perm
+        flatno: 123
+        city: hyd
+      - type: current
+        flatno: 321
+        city: cal
+    
+

@@ -1,0 +1,42 @@
+
+{
+
+ "employees_information":
+ [
+   {
+     "name": "sam",
+     "dob": 1998,
+     "address": [
+       {
+        "type": "perm",
+        "flatno": 111
+       },
+       {
+        "type": "current",
+        "flatno": 121,
+        "country": "europe"
+        }
+     ]
+   }, 
+   { 
+      "name": "jyo",
+      "dob": 1998,
+      "address": [
+        { 
+          "type": "perm",
+          "flatno": 123,
+          "country": "usa"
+        },
+        {
+           "type": "current",
+           "flatno": 321,
+           "country": "europe"
+
+        }
+
+     ]
+   }
+    
+ ]
+
+}
