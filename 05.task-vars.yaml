@@ -1,0 +1,13 @@
+- name: overriding pay level variables by task variables
+  hosts: local
+  connection: local
+  vars:
+   SKILLS: Devops
+   ROLE: DevOps engineer
+  tasks:
+  - name: anisible as skills
+    vars:
+     SKILLS: ansible
+    ansible.builtin.debug:
+     msg: "role is {{ ROLE }} and have skills {{ SKILLS }}"
+   
