@@ -1,0 +1,11 @@
+- name: pay level variables
+  hosts: local
+  connections: local
+  vars:
+   ROLE: Devops engineer
+   SCOPE: Automation
+   EXPERIENCE: Best
+  tasks:
+  - name: print variables
+    ansible.builtin.debug:
+     msg: "experience is {{ EXPERIENCE }} scope {{ SCOPE }} role {{ ROLE }}"
