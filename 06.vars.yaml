@@ -1,0 +1,11 @@
+- name: variables
+  hosts: local
+  connection: local
+  vars_files:
+  - allvars.yaml
+  tasks:
+  - name: anisible as skills
+    vars:
+     SKILLS: ansible
+    ansible.builtin.debug:
+     msg: "role is {{ ROLE }} and have skills {{ SKILLS }}"
