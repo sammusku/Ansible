@@ -1,6 +1,6 @@
 - name: pay level variables
   hosts: local
-  connections: local
+  connection: local
   vars:
    ROLE: Devops engineer
    SCOPE: Automation
