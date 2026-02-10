@@ -42,7 +42,7 @@
 
   - name: read employee yaml format
     ansible.builtin.set_fact:   #setting as variable
-     format.yaml: "{{ lookup( 'file', 'format.yaml' ) |  from_yaml }}"
+     format.yaml: "{{ lookup('file', 'format.yaml' ) |  from_yaml }}"
 
   - name: convert yaml file to json
     ansible.builtin.debug:
