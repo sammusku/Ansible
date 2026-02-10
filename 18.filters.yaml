@@ -3,11 +3,20 @@
   connection: local
   vars:
    Topics: shell,terraform,ansible,jenkins,kubernetes  #strings
+   taglists:
+   - linux
+   - ubuntu
+   - windows
   tasks:
   - name: greeting message
     ansible.builtin.debug:
      msg: "Hi,SAM {{ Greeting | default('good morning') }}"
+
   - name: convert string to list
     ansible.builtin.debug:
      msg: "{{ Topics | split(',') }}"
+  
+  - name: convert list to map
+    ansible.builtin.debug:
+     msg: "{{ taglists | items2dic }}"
      
