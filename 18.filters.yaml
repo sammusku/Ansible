@@ -3,7 +3,7 @@
   connection: local
   vars:
    Topics: shell,terraform,ansible,jenkins,kubernetes  #strings
-   taglists:
+  taglists:
    - linux
    - ubuntu
    - windows
@@ -19,4 +19,3 @@
   - name: convert list to map
     ansible.builtin.debug:
      msg: "{{ taglists | items2dic }}"
-     
