@@ -4,9 +4,9 @@
   vars:
    Topics: shell,terraform,ansible,jenkins,kubernetes  #strings
    TagMap:
-    OS1:linux
-    OS2:ubuntu
-    OS3:windows
+    OS1: linux
+    OS2: ubuntu
+    OS3: windows
   tasks:
   - name: greeting message
     ansible.builtin.debug:
