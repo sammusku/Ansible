@@ -1,12 +1,12 @@
 - name: checking variables priorities in ansible
   hosts: local
   connection: local
-  # vars:
-  #  NAME: Hey,I'm from pay
+  vars:
+   NAME: Hey,I'm from pay
   # vars_files:
   #  - allvars.yaml
   vars_prompt:
-   - name: print the prompt
+   - name: NAME
      prompt: please enter name
      private: false
   tasks:
@@ -23,5 +23,3 @@
 #1.Args
 #2.task
 #3.file
-#4.pay
-#5.inventory
