@@ -7,6 +7,22 @@
     OS1: linux
     OS2: ubuntu
     OS3: windows
+   TagLists:
+    [
+        {
+            "key": "OS1",
+            "value": "linux"
+        },
+        {
+            "key": "OS2",
+            "value": "ubuntu" 
+        },
+        {
+            "key": "OS3",
+            "value": "windows"
+        }
+     ]
+
   tasks:
   - name: greeting message
     ansible.builtin.debug:
@@ -19,3 +35,7 @@
   - name: convert map to list
     ansible.builtin.debug:
      msg: "{{ TagMap | dict2items }}"
+    
+  - name: convert list to map
+    ansible.builtin.debug:
+     msg: "{{ TagLists | items2dict }}"
