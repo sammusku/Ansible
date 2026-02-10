@@ -3,8 +3,8 @@
   connection: local
   vars:
    NAME: Hey,I'm from pay
-  vars_files:
-   - allvars.yaml
+  #vars_files:
+   #- allvars.yaml
   vars_prompt:
    - name: print the prompt
      prompt: please enter name
@@ -22,4 +22,4 @@
 #Priority levels
 #1.Args
 #2.task
-#3.
+#3.file
