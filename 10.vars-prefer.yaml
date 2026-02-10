@@ -5,10 +5,10 @@
    NAME: Hey,I'm from pay
   # vars_files:
   #  - allvars.yaml
-  vars_prompt:
-   - name: NAME
-     prompt: please enter name
-     private: false
+  # vars_prompt:
+  #  - name: NAME
+  #    prompt: please enter name
+  #    private: false
   tasks:
    - name: print in task level
     #  vars:
@@ -23,3 +23,5 @@
 #1.Args
 #2.task
 #3.file
+#4.prompt
+
