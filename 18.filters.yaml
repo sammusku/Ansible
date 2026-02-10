@@ -3,10 +3,10 @@
   connection: local
   vars:
    Topics: shell,terraform,ansible,jenkins,kubernetes  #strings
-  taglists:
-   - linux
-   - ubuntu
-   - windows
+   Taglists:
+    - linux
+    - ubuntu
+    - windows
   tasks:
   - name: greeting message
     ansible.builtin.debug:
@@ -18,4 +18,4 @@
   
   - name: convert list to map
     ansible.builtin.debug:
-     msg: "{{ taglists | items2dic }}"
+     msg: "{{ Taglists | items2dic }}"
