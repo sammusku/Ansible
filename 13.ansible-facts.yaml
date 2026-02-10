@@ -9,11 +9,11 @@
   tasks:
   - name: check redhat or not
     ansible.builtin.debug:
-     msg: "{{ ansible_facts.os_family is redhat}}"
+     msg: "yes, it is redhat"
     when: ansible_facts.os_family == "Redhat"
   
   tasks:
   - name: check Debian or not
     ansible.builtin.debug:
-     msg: "{{ ansible_facts.os_family is debian }}"
+     msg: "yes,it is debian"
     when: ansible_facts.os_family == "Debian"
