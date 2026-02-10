@@ -2,6 +2,6 @@
   hosts: local
   connection: local
   tasks:
-   - name:print arguments
-  ansible.builtin.debug:
-   msg: "{{ NAME }}"
+   - name: print arguments
+     ansible.builtin.debug:
+      msg: "{{ NAME }}"
