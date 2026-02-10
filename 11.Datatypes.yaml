@@ -1,0 +1,26 @@
+- name: different datatypes in ansible
+  hosts: local
+  connection: local
+  vars:
+   NAME: "SAM" #string
+   ID: 111 #int/number
+   IS_LIVE: true #bool
+   DETAILS: #map/dictionary -key value
+    SKILLS: devsecops
+    CLOUD: aws
+   Devsecops: 
+    - linux
+    - shell
+    - ansible
+    - terraform
+    - docker
+  tasks:
+   - name: print all kinds of datatypes
+     ansible.builtin.debug:
+      msg: |
+       name: {{ NAME }}
+       id: {{ ID }}
+       is_live?: {{ IS_LIVE }}
+       details: {{ DETAILS }}
+       devsecops list: {{ Devsecops }}
+       
