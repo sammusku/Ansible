@@ -5,7 +5,17 @@
   - name: test command module
     ansible.builtin.command: ls /home
     register: home_dirs
+  - name: test shell module
+    ansible.builtin.shell: cat /etc/passwd | grep root
+    register: user_output
+
   - name: print output
     ansible.builtin.debug:
-     msg: "{{ home_dirs }}"
+     msg: |
+      command: "{{ home_dirs }}"
+      shell: "{{ user_output }}"
+
+
+  
+
      
