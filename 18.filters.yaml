@@ -39,3 +39,11 @@
   - name: convert list to map
     ansible.builtin.debug:
      msg: "{{ TagLists | items2dict }}"
+
+  - name: read employee yaml format
+    ansible.builtin.set_fact:   #setting as variable
+    format.yaml: "{{ lookup( 'file', 'format.yaml' ) |  from_yaml }}"
+
+  - name: convert yaml file to json
+    ansible.builtin,debug:
+     msg: "{{ format.yaml | to_nice_json }}"
