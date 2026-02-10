@@ -3,10 +3,10 @@
   connection: local
   vars:
    Topics: shell,terraform,ansible,jenkins,kubernetes  #strings
-   TagMap:
-    OS1: linux
-    OS2: ubuntu
-    OS3: windows
+   Maps: 
+     OS1: linux
+     OS2: ubuntu
+     OS3: windows
    TagLists:
       - key: OS1
         value: linux
