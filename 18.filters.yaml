@@ -45,5 +45,5 @@
      format.yaml: "{{ lookup( 'file', 'format.yaml' ) |  from_yaml }}"
 
   - name: convert yaml file to json
-    ansible.builtin,debug:
+    ansible.builtin.debug:
      msg: "{{ format.yaml | to_nice_json }}"
