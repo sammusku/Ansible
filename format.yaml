@@ -3,11 +3,11 @@ employees_information:
     dob: 1998
     address:
       - type: perm
-       flatno: 111
-       city: hyd
+        flatno: 111
+        city: hyd
       - type: current
-       flatno: 125
-       city: luxumberg
+        flatno: 125
+        city: luxumberg
 
 
   - name: jyo
