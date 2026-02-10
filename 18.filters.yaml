@@ -3,10 +3,10 @@
   connection: local
   vars:
    Topics: shell,terraform,ansible,jenkins,kubernetes  #strings
-   Taglists:
-    - linux
-    - ubuntu
-    - windows
+   TagMap:
+    OS1:linux
+    OS2:ubuntu
+    OS3:windows
   tasks:
   - name: greeting message
     ansible.builtin.debug:
@@ -16,6 +16,6 @@
     ansible.builtin.debug:
      msg: "{{ Topics | split(',') }}"
   
-  - name: convert list to map
+  - name: convert map to list
     ansible.builtin.debug:
-     msg: "{{ Taglists | items2dict }}"
+     msg: "{{ TagMap | items2dict }}"
