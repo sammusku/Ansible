@@ -3,7 +3,7 @@
   connection: local
   vars:
     course: DevSecOps with Aws
-  myIp: 192.22.22.134
+    myIp: 192.22.22.134
   tasks:
   - name: write in uppercase
     ansible.builtin.debug:
