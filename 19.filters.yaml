@@ -3,6 +3,7 @@
   connection: local
   vars:
     course: DevSecOps with Aws
+  myIp: 192.22.22.134
   tasks:
   - name: write in uppercase
     ansible.builtin.debug:
@@ -10,3 +11,7 @@
   - name: write in lowercase
     ansible.builtin.debug:
      msg: "{{ course | lower }}"
+
+  - name: check ip adress is valid or not
+    ansible.builtin.debug:
+     msg: "{{ myIp | ansible.utils.ipaddr }}"
