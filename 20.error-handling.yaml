@@ -11,4 +11,4 @@
      msg: "{{ user_output }}"
   - name: create user
     ansible.builtin.command: useradd roboshop
-    when: "{{ ignore_errors.rc != 0 }}"
+    when: ignore_errors.rc != 0
