@@ -1,0 +1,9 @@
+- name: filters
+  hosts: local
+  connection: local
+  vars:
+    course: DevSecOps with Aws
+  tasks:
+  - name: write in uppercase
+    ansible.builtin.debug:
+     msg: "{{ course | UPPER }}"
