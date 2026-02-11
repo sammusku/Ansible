@@ -1,0 +1,9 @@
+- name: maintaning idempotency by using ansible collections
+  hosts: local
+  connection: local
+  become: yes
+  tasks:
+  - name: create user
+    ansible.builtin.user:
+     name:jhon
+     
